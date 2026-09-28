@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Aurelia Tours | Luxury Journeys</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet"></head><body>
+<div id="nav"></div>
+<header class="hero"><div class="sun"></div><div class="container"><h1>Your next story<br>starts in <span id="rot">Maldives</span></h1><p class="lead my-4">Private guides, handpicked stays and unhurried itineraries across eight countries.</p><div class="d-flex flex-wrap gap-3"><a href="destinations.html" class="btn btn-gold">Explore destinations</a><a href="about.html" class="btn btn-ghost">Why Aurelia</a></div></div>
+<svg class="waves" viewBox="0 0 1440 110" preserveAspectRatio="none"><path fill="#F6F4F0" d="M0 60C120 20 240 20 360 60s240 40 360 0 240-40 360 0 240 40 360 0v50H0z"/></svg></header>
+<section class="sec"><div class="container"><div class="text-center mb-5 rv"><h2>Featured destinations</h2><p>Four places our travellers keep coming back to.</p></div><div class="row g-4" id="feat"></div><div class="text-center mt-5 rv"><a href="destinations.html" class="btn btn-gold">See all 8 destinations</a></div></div></section>
+<section class="sec dark"><div class="container"><div class="row g-4 text-center">
+<div class="col-6 col-md-3 stat rv"><b>8</b>Countries</div><div class="col-6 col-md-3 stat rv"><b>1,200+</b>Happy travellers</div><div class="col-6 col-md-3 stat rv"><b>60+</b>Private guides</div><div class="col-6 col-md-3 stat rv"><b>4.9</b>Average rating</div></div></div></section>
+<section class="sec"><div class="container"><h2 class="text-center mb-5 rv">Travel, done properly</h2><div class="row g-4">
+<div class="col-md-4 rv"><div class="feat"><i class="bi bi-gem"></i><h3 class="mt-3">Handpicked stays</h3><p>Every hotel and villa is visited by our team before it joins a tour.</p></div></div>
+<div class="col-md-4 rv"><div class="feat"><i class="bi bi-person-check"></i><h3 class="mt-3">Private guides</h3><p>Local experts who know the quiet corners, not only the famous ones.</p></div></div>
+<div class="col-md-4 rv"><div class="feat"><i class="bi bi-shield-check"></i><h3 class="mt-3">Worry-free booking</h3><p>Clear prices, flexible dates and support before, during and after your trip.</p></div></div></div>
+<div class="cta mt-5 rv"><h2>Ready to pick your country?</h2><p class="mb-4">Choose a tour and book it in under a minute.</p><a href="destinations.html" class="btn btn-gold">Book a tour</a></div></div></section>
+<div id="foot"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="js/main.js"></script>
+<script>$('#feat').innerHTML=D.slice(0,4).map(card).join('');reveal();let i=0;setInterval(()=>{const r=$('#rot');r.classList.add('out');setTimeout(()=>{i=(i+1)%D.length;r.textContent=D[i].c;r.classList.remove('out')},500)},2600)</script></body></html>
